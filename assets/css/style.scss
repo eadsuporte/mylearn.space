@@ -81,6 +81,9 @@ button, input, textarea {
     border-radius: 14px;
     display: grid;
     place-items: center;
+    img {
+        max-height: 60px;
+    }
 }
 .main-nav {
     margin-left: auto;
@@ -1164,7 +1167,6 @@ input[type="range"] {
         min-height: 240px;
     }
 }
-
 /* MoodleMobile service page */
 .moodlemobile-hero {
     overflow: hidden;
@@ -1429,7 +1431,6 @@ input[type="range"] {
         grid-column: 1 / -1;
     }
 }
-
 /* Kopere Dashboard service page */
 .kopere-dashboard-hero {
     overflow: hidden;
@@ -1684,7 +1685,6 @@ input[type="range"] {
         padding: 3px;
     }
 }
-
 /* Case studies */
 .page-case-study .section-heading.light h2,
 .page-case-study .section-heading.light h3 {
@@ -1696,16 +1696,14 @@ input[type="range"] {
     overflow: hidden;
 }
 .case-study-hero-maritime {
-    background:
-        radial-gradient(circle at 12% 16%, rgba(0, 168, 107, .22), transparent 28%),
-        radial-gradient(circle at 86% 24%, rgba(47, 128, 237, .16), transparent 30%),
-        linear-gradient(180deg, #f3fbff 0%, #ffffff 100%);
+    background: radial-gradient(circle at 12% 16%, rgba(0, 168, 107, .22), transparent 28%),
+    radial-gradient(circle at 86% 24%, rgba(47, 128, 237, .16), transparent 30%),
+    linear-gradient(180deg, #f3fbff 0%, #ffffff 100%);
 }
 .case-study-hero-security {
-    background:
-        radial-gradient(circle at 12% 18%, rgba(20, 33, 61, .14), transparent 28%),
-        radial-gradient(circle at 88% 22%, rgba(245, 81, 151, .10), transparent 30%),
-        linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+    background: radial-gradient(circle at 12% 18%, rgba(20, 33, 61, .14), transparent 28%),
+    radial-gradient(circle at 88% 22%, rgba(245, 81, 151, .10), transparent 30%),
+    linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
 }
 .case-hero-grid {
     display: grid;
@@ -2014,16 +2012,14 @@ input[type="range"] {
 }
 .case-process-section,
 .security-boundary-section {
-    background:
-        radial-gradient(circle at 15% 15%, rgba(0, 168, 107, .26), transparent 25%),
-        radial-gradient(circle at 88% 20%, rgba(47, 128, 237, .15), transparent 28%),
-        linear-gradient(145deg, #07111f, #0d1727 58%, #060b13);
+    background: radial-gradient(circle at 15% 15%, rgba(0, 168, 107, .26), transparent 25%),
+    radial-gradient(circle at 88% 20%, rgba(47, 128, 237, .15), transparent 28%),
+    linear-gradient(145deg, #07111f, #0d1727 58%, #060b13);
 }
 .security-boundary-section {
-    background:
-        radial-gradient(circle at 15% 15%, rgba(245, 81, 151, .14), transparent 25%),
-        radial-gradient(circle at 88% 20%, rgba(255, 255, 255, .06), transparent 28%),
-        linear-gradient(145deg, #07111f, #111a29 58%, #060b13);
+    background: radial-gradient(circle at 15% 15%, rgba(245, 81, 151, .14), transparent 25%),
+    radial-gradient(circle at 88% 20%, rgba(255, 255, 255, .06), transparent 28%),
+    linear-gradient(145deg, #07111f, #111a29 58%, #060b13);
 }
 .case-timeline {
     display: grid;
@@ -2080,9 +2076,8 @@ input[type="range"] {
     padding: 46px;
     border: 1px solid rgba(190, 45, 45, .20);
     border-radius: 30px;
-    background:
-        radial-gradient(circle at 90% 10%, rgba(190, 45, 45, .10), transparent 30%),
-        #ffffff;
+    background: radial-gradient(circle at 90% 10%, rgba(190, 45, 45, .10), transparent 30%),
+    #ffffff;
     box-shadow: var(--shadow);
     text-align: center;
 }
@@ -2114,17 +2109,15 @@ input[type="range"] {
     padding: 46px;
     border: 1px solid rgba(0, 168, 107, .22);
     border-radius: 30px;
-    background:
-        radial-gradient(circle at 90% 10%, rgba(0, 168, 107, .12), transparent 30%),
-        linear-gradient(145deg, #ffffff, #f5fff9);
+    background: radial-gradient(circle at 90% 10%, rgba(0, 168, 107, .12), transparent 30%),
+    linear-gradient(145deg, #ffffff, #f5fff9);
     box-shadow: var(--shadow);
     text-align: center;
 }
 .security-proof-card {
     border-color: rgba(20, 33, 61, .16);
-    background:
-        radial-gradient(circle at 90% 10%, rgba(20, 33, 61, .08), transparent 30%),
-        linear-gradient(145deg, #ffffff, #f7f9fc);
+    background: radial-gradient(circle at 90% 10%, rgba(20, 33, 61, .08), transparent 30%),
+    linear-gradient(145deg, #ffffff, #f7f9fc);
 }
 .case-proof-card h2 {
     margin-top: 16px;
