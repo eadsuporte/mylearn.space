@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mylearn.space/sitemap.xml
