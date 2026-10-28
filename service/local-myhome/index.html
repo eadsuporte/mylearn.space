@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#133c52">
+  <title>MyHome for Moodle | Give your learning platform a professional look - My Learn Services</title>
+  <meta name="description" content="Turn your Moodle front page into an engaging learning environment that reflects your organisation. Featured courses, learning pathways, banners and a well-organised experience with MyHome.">
+  <link rel="canonical" href="https://mylearn.space/service/local-myhome/">
+<link rel="alternate" hreflang="en" href="https://mylearn.space/service/local-myhome/">
+<link rel="alternate" hreflang="pt-BR" href="https://eadsuporte.com.br/service/local-myhome/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Moodle with a professional look | My Learn Services">
+  <meta property="og:description" content="A modern, branded front page with courses, learning pathways and learner-focused navigation.">
+  <meta property="og:url" content="https://mylearn.space/service/local-myhome/">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* Estilos exclusivos da página MyHome; preserva o CSS comum do site. */
+    .page-myhome { background: #fff; }
+    .page-myhome .mh-hero { position: relative; overflow: hidden; color: #fff; background: radial-gradient(ellipse at 80% 6%, rgba(19, 151, 119, .28), transparent 42%), radial-gradient(ellipse at 10% 72%, rgba(58, 99, 189, .20), transparent 48%), #071623; }
+    .page-myhome .mh-hero::after { content: ""; position: absolute; pointer-events: none; inset: 0; opacity: .14; background-image: linear-gradient(rgba(255,255,255,.16) 1px,transparent 1px), linear-gradient(90deg,rgba(255,255,255,.16) 1px,transparent 1px); background-size: 82px 82px; mask-image: linear-gradient(to bottom, #000, transparent 90%); }
+    .page-myhome .mh-hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, .90fr) minmax(0, 1.10fr); align-items: center; gap: clamp(28px, 4vw, 68px); padding-top: clamp(88px, 9vw, 126px); padding-bottom: clamp(80px, 8vw, 116px); }
+    .page-myhome .mh-eyebrow { display: inline-flex; align-items: center; gap: 9px; width: fit-content; font-size: .75rem; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; border-radius: 999px; padding: 9px 14px; background: rgba(75, 220, 164, .12); border: 1px solid rgba(103, 235, 174, .35); color: #9cf6c7; }
+    .page-myhome .mh-eyebrow::before { content: ""; height: 7px; width: 7px; border-radius: 50%; background: #65e7a9; box-shadow: 0 0 0 4px rgba(101,231,169,.13); }
+    .page-myhome .mh-hero h1 { font-size: clamp(2.85rem, 4.9vw, 5.2rem); line-height: 1.03; letter-spacing: -.057em; margin: 24px 0 20px; max-width: 660px; text-wrap: balance; }
+    .page-myhome .mh-hero h1 em { font-style: normal; color: #83edb0; }
+    .page-myhome .mh-lead { font-size: clamp(1.08rem, 1.4vw, 1.23rem); color: #c3d0db; max-width: 565px; line-height: 1.7; margin: 0 0 29px; }
+    .page-myhome .mh-hero-actions, .page-myhome .mh-cta-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .page-myhome .mh-hero-actions .btn { min-height: 52px; }
+    .page-myhome .mh-btn-ghost { border: 1px solid rgba(222, 242, 251, .30); background: rgba(255,255,255,.08); color: #fff; }
+    .page-myhome .mh-btn-ghost:hover { color: #fff; background: rgba(255,255,255,.15); }
+    .page-myhome .mh-hero-footnote { margin: 24px 0 0; color: #99b2c0; font-size: .87rem; }
+    .page-myhome .mh-browser { position: relative; padding: 11px; border-radius: 23px; background: #d9e3e9; box-shadow: 0 28px 65px rgba(0,0,0,.34), 0 0 0 1px rgba(255,255,255,.14); transform: perspective(1600px) rotateY(-6deg) rotateX(2deg); transform-origin: center; }
+    .page-myhome .mh-browser-top { display: flex; align-items: center; gap: 6px; height: 25px; padding: 0 9px 8px; }
+    .page-myhome .mh-dot { width: 8px; height: 8px; border-radius: 50%; background: #a8bbc6; }
+    .page-myhome .mh-dot:first-child { background: #ea8983; }
+    .page-myhome .mh-dot:nth-child(2) { background: #eabb68; }
+    .page-myhome .mh-dot:nth-child(3) { background: #70c59f; }
+    .page-myhome .mh-url { margin-left: auto; margin-right: auto; font-size: .68rem; color: #698191; background: #f5f9fa; padding: 3px 23px; border-radius: 6px; }
+    .page-myhome .mh-ui { overflow: hidden; background: #f4f7f9; border-radius: 12px; color: #152b36; font-size: .82rem; }
+    .page-myhome .mh-ui-nav { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: white; padding: 16px 19px; border-bottom: 1px solid #e8eff2; }
+    .page-myhome .mh-ui-logo { display: flex; align-items: center; gap: 8px; font-weight: 850; font-size: .89rem; white-space: nowrap; }
+    .page-myhome .mh-ui-logo-mark { display: inline-grid; place-items: center; width: 28px; height: 28px; background: #0b8f68; border-radius: 9px; color: white; font-size: .9rem; }
+    .page-myhome .mh-ui-nav-links { display: flex; gap: 15px; font-size: .70rem; color: #6d7a88; }
+    .page-myhome .mh-ui-nav-links strong { color: #11886a; }
+    .page-myhome .mh-avatar { display: grid; place-items: center; width: 29px; height: 29px; flex: 0 0 29px; border-radius: 50%; background: #dff7ea; color: #087855; font-weight: 800; }
+    .page-myhome .mh-ui-content { padding: 16px; }
+    .page-myhome .mh-ui-banner { border-radius: 12px; display: grid; grid-template-columns: 1.4fr .6fr; min-height: 137px; overflow: hidden; color: #fff; background: linear-gradient(115deg, #064838, #087e61); }
+    .page-myhome .mh-ui-banner-copy { padding: 23px 20px; }
+    .page-myhome .mh-ui-banner small { display: block; color: #a8e9cc; font-size: .68rem; margin-bottom: 10px; }
+    .page-myhome .mh-ui-banner strong { display: block; font-size: clamp(.96rem, 1.7vw, 1.35rem); line-height: 1.2; margin-bottom: 10px; }
+    .page-myhome .mh-ui-banner span { font-size: .68rem; color: #bee3d5; }
+    .page-myhome .mh-ui-banner-graphic { position: relative; overflow: hidden; background: radial-gradient(circle at 53% 48%, #31b792, #087e61 65%); }
+    .page-myhome .mh-ui-banner-graphic::before { content: ""; position: absolute; width: 135px; height: 135px; border: 20px solid rgba(255,255,255,.15); border-radius: 40px; transform: rotate(28deg); top: 6px; right: -8px; }
+    .page-myhome .mh-ui-banner-graphic::after { content: "✦"; position: absolute; color: rgba(255,255,255,.86); font-size: 86px; right: 32px; top: 10px; }
+    .page-myhome .mh-ui-section-label { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 850; margin: 19px 0 10px; font-size: .84rem; }
+    .page-myhome .mh-ui-section-label small { font-size: .67rem; color: #14936e; }
+    .page-myhome .mh-ui-courses { display: grid; grid-template-columns: repeat(3, 1fr); gap: 9px; }
+    .page-myhome .mh-ui-course { min-width: 0; border: 1px solid #e6edf0; background: white; border-radius: 9px; overflow: hidden; }
+    .page-myhome .mh-ui-course-art { position: relative; height: 68px; overflow: hidden; background: linear-gradient(135deg,#08725c,#60c9a0); }
+    .page-myhome .mh-ui-course-art.two { background: linear-gradient(135deg,#1c4770,#76b2d5); }
+    .page-myhome .mh-ui-course-art.three { background: linear-gradient(135deg,#4a387b,#ae8cdb); }
+    .page-myhome .mh-ui-course-art::before { content: ""; position: absolute; width: 75px; height: 75px; border: 12px solid rgba(255,255,255,.22); border-radius: 19px; transform: rotate(-22deg); top: -26px; right: 10px; }
+    .page-myhome .mh-ui-course-copy { padding: 11px 9px 13px; }
+    .page-myhome .mh-ui-course-copy strong { display: block; font-size: .69rem; min-height: 27px; line-height: 1.3; }
+    .page-myhome .mh-ui-course-copy small { display: block; color: #7c8895; margin: 5px 0; font-size: .62rem; }
+    .page-myhome .mh-bar { height: 5px; border-radius: 99px; overflow: hidden; background: #e4eef0; }
+    .page-myhome .mh-bar::before { content: ""; display: block; height: 100%; background: #18a57c; width: var(--progress, 45%); border-radius: inherit; }
+    .page-myhome .mh-preview-caption { position: absolute; right: 19px; bottom: -40px; padding: 10px 13px; border: 1px solid rgba(255,255,255,.16); background: #0e3040; color: #d2eee9; border-radius: 12px; font-size: .77rem; transform: rotateY(6deg) rotateX(-2deg); box-shadow: 0 10px 27px rgba(0,0,0,.24); }
+    .page-myhome .mh-preview-caption strong { color: #b2f5ce; }
+    .page-myhome .mh-proof-strip { padding: 22px 0; background: #f4faf7; border-bottom: 1px solid #deeee5; }
+    .page-myhome .mh-proof-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 12px 34px; color: #2b5a4b; font-size: .88rem; font-weight: 750; }
+    .page-myhome .mh-proof-inner span { display: inline-flex; align-items: center; gap: 9px; }
+    .page-myhome .mh-proof-inner svg { width: 17px; height: 17px; fill: none; stroke: #15966b; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+    .page-myhome .mh-section-kicker { display: inline-block; font-size: .76rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; color: #087f60; margin-bottom: 12px; }
+    .page-myhome .mh-section-heading { max-width: 820px; margin: 0 auto 40px; text-align: center; }
+    .page-myhome .mh-section-heading h2 { font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -.04em; text-wrap: balance; }
+    .page-myhome .mh-section-heading p { font-size: 1.08rem; color: #637287; }
+    .page-myhome .mh-features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .page-myhome .mh-feature { padding: 30px 27px; border: 1px solid #e4ebec; border-radius: 19px; background: #fff; box-shadow: 0 15px 40px rgba(16,47,60,.045); }
+    .page-myhome .mh-feature-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; margin-bottom: 21px; font-size: 1.36rem; background: #e9f8f0; color: #047950; }
+    .page-myhome .mh-feature h3 { font-size: 1.19rem; line-height: 1.25; }
+    .page-myhome .mh-feature p { margin: 0; color: #647487; font-size: .99rem; line-height: 1.65; }
+    .page-myhome .mh-narrative { background: #f5f8fb; }
+    .page-myhome .mh-story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 90px); align-items: center; }
+    .page-myhome .mh-story-copy h2 { font-size: clamp(2rem, 3.9vw, 3.15rem); letter-spacing: -.04em; margin: 0 0 19px; }
+    .page-myhome .mh-story-copy p { color: #5c6c7b; font-size: 1.07rem; }
+    .page-myhome .mh-story-list { list-style: none; margin: 25px 0; padding: 0; display: grid; gap: 14px; }
+    .page-myhome .mh-story-list li { display: flex; align-items: flex-start; gap: 11px; font-weight: 650; }
+    .page-myhome .mh-story-list li::before { content: "✓"; display: grid; place-items: center; flex: 0 0 24px; height: 24px; color: #087b56; background: #dff5e9; border-radius: 50%; font-size: .83rem; margin-top: 2px; }
+    .page-myhome .mh-process-card { background: #fff; padding: clamp(20px, 3vw, 36px); border-radius: 24px; border: 1px solid #e1eaed; box-shadow: 0 22px 54px rgba(10,28,42,.08); }
+    .page-myhome .mh-process-label { color: #118361; text-transform: uppercase; letter-spacing: .09em; font-size: .77rem; font-weight: 800; margin: 0 0 23px; }
+    .page-myhome .mh-step { display: grid; grid-template-columns: 41px 1fr; gap: 16px; align-items: start; position: relative; padding-bottom: 24px; }
+    .page-myhome .mh-step:last-child { padding-bottom: 0; }
+    .page-myhome .mh-step:not(:last-child)::before { content: ""; position: absolute; top: 40px; bottom: 4px; left: 19px; width: 1px; background: #d9ebe3; }
+    .page-myhome .mh-step-number { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; background: #e8f7ef; color: #087d5e; font-weight: 900; }
+    .page-myhome .mh-step h3 { font-size: 1.05rem; margin: 1px 0 6px; }
+    .page-myhome .mh-step p { margin: 0; color: #667687; font-size: .94rem; }
+    .page-myhome .mh-quote { background: #082a29; color: white; padding: 78px 0; }
+    .page-myhome .mh-quote .container { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; }
+    .page-myhome .mh-quote h2 { font-size: clamp(2rem, 3.5vw, 3.1rem); letter-spacing: -.045em; margin: 0; }
+    .page-myhome .mh-quote p { font-size: 1.13rem; color: #b7d7cd; margin: 0; }
+    .page-myhome .mh-faq { max-width: 820px; margin: 0 auto; }
+    .page-myhome .mh-faq details { background: #fff; border-bottom: 1px solid #e4eaee; padding: 22px 0; }
+    .page-myhome .mh-faq summary { font-size: 1.08rem; font-weight: 800; cursor: pointer; padding-right: 27px; }
+    .page-myhome .mh-faq details p { margin: 13px 0 0; color: #617184; }
+    .page-myhome .mh-contact { background: #eef7f3; }
+    .page-myhome .mh-contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(25px, 5vw, 70px); align-items: start; }
+    .page-myhome .mh-contact h2 { font-size: clamp(2rem, 3.6vw, 3rem); letter-spacing: -.04em; }
+    .page-myhome .mh-contact-intro { margin: 18px 0 28px; font-size: 1.08rem; color: #526b64; }
+    .page-myhome .mh-contact-list { display: grid; gap: 14px; }
+    .page-myhome .mh-contact-list a { color: #086a50; font-weight: 800; overflow-wrap: anywhere; }
+    .page-myhome .mh-contact .form-card { padding: clamp(22px, 4vw, 38px); }
+    .page-myhome .mh-contact .form-card h3 { font-size: 1.52rem; letter-spacing: -.02em; }
+    .page-myhome .mh-contact .form-card p { color: #637287; }
+    .page-myhome .mh-contact .form-card label { display: block; margin-top: 14px; font-weight: 750; color: #324b59; }
+    .page-myhome .mh-contact .form-card input, .page-myhome .mh-contact .form-card textarea { display: block; width: 100%; margin-top: 6px; padding: 13px 14px; border: 1px solid #d8e2e7; background: white; border-radius: 11px; color: #172b36; font-weight: 450; }
+    .page-myhome .mh-contact .form-card textarea { min-height: 110px; resize: vertical; }
+    .page-myhome .mh-contact .form-card .btn { margin-top: 22px; width: 100%; min-height: 52px; }
+    .page-myhome .mh-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 14px; }
+    .page-myhome .mh-form-small { font-size: .82rem; margin: 13px 0 0; }
+    .page-myhome :focus-visible { outline: 3px solid #47d2a2; outline-offset: 4px; }
+    @media (max-width: 1100px) { .page-myhome .mh-hero-inner { grid-template-columns: 1fr; padding-top: 70px; } .page-myhome .mh-hero-copy { max-width: 780px; } .page-myhome .mh-browser { max-width: 720px; margin: 15px auto 30px; transform: none; } .page-myhome .mh-preview-caption { transform: none; } }
+    @media (max-width: 850px) { .page-myhome .mh-features { grid-template-columns: repeat(2, 1fr); } .page-myhome .mh-story-grid, .page-myhome .mh-contact-grid, .page-myhome .mh-quote .container { grid-template-columns: 1fr; } }
+    @media (max-width: 580px) { .page-myhome .mh-hero h1 { font-size: clamp(2.65rem, 11.8vw, 4rem); } .page-myhome .mh-browser { padding: 7px; } .page-myhome .mh-ui-nav { padding: 10px; } .page-myhome .mh-ui-nav-links { display: none; } .page-myhome .mh-ui-content { padding: 10px; } .page-myhome .mh-ui-banner { min-height: 124px; } .page-myhome .mh-ui-banner-copy { padding: 16px 12px; } .page-myhome .mh-ui-banner-graphic::after { font-size: 55px; top: 15px; right: 12px; } .page-myhome .mh-ui-banner-graphic::before { width: 90px; height: 90px; } .page-myhome .mh-ui-courses { gap: 5px; } .page-myhome .mh-ui-course-art { height: 43px; } .page-myhome .mh-ui-course-copy { padding: 7px 5px; } .page-myhome .mh-ui-course-copy strong { font-size: .58rem; } .page-myhome .mh-ui-course-copy small { font-size: .52rem; } .page-myhome .mh-preview-caption { position: static; margin-top: 10px; text-align: center; } .page-myhome .mh-features, .page-myhome .mh-form-row { grid-template-columns: 1fr; } .page-myhome .mh-feature { padding: 25px 23px; } .page-myhome .mh-hero-actions .btn { width: 100%; } .page-myhome .mh-section-heading { text-align: left; } .page-myhome .mh-quote { padding: 62px 0; } }
+    @media (prefers-reduced-motion: reduce) { .page-myhome *, .page-myhome *::before, .page-myhome *::after { scroll-behavior: auto !important; transition: none !important; } }
+  </style>
+    <link rel="stylesheet" href="/assets/studio/fonts.css">
+    <link rel="stylesheet" href="/assets/css/studio-shell.css">
+<link rel="stylesheet" href="/assets/css/studio-navigation.css">
+</head>
+<body class="page-services page-service-detail page-myhome studio-site-internal">
+<a class="studio-skip-link" href="#conteudo">Skip to content</a>
+<header class="studio-site-header" data-studio-header>
+  <div class="studio-site-header__inner">
+    <a class="studio-site-header__brand" href="/" aria-label="My Learn Services — home"><img src="/assets/studio/logo.png" alt="My Learn Services" width="175" height="52"></a>
+    <button class="studio-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="studio-site-navigation" data-studio-menu-toggle><span></span><span></span></button>
+    <nav class="studio-site-nav" id="studio-site-navigation" aria-label="Main navigation" data-studio-nav>
+<a href="/" data-site-menu="Home">Home</a>
+<a href="/plugins" data-site-menu="Plugins">Plugins</a>
+<a href="/moodle-upgrades" data-site-menu="Upgrades">Upgrades</a>
+<a href="/service/moodlemobile" data-site-menu="Mobile">Mobile</a>
+<a href="/services" data-site-menu="Services">Services</a>
+<a href="/services#success-cases" data-site-menu="Cases">Cases</a>
+<a href="/service/moodle-hosting" data-site-menu="Pricing">Pricing</a>
+<a href="/#contato" data-site-menu="Contact">Contact</a>
+      <div class="studio-site-lang" aria-label="Language"><a href="/" lang="en" hreflang="en" aria-label="English" title="English" aria-current="true">🇺🇸</a><a href="https://eadsuporte.com.br/service/local-myhome/" lang="pt-BR" hreflang="pt-BR" aria-label="Português" title="Português">🇧🇷</a></div>
+    </nav>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="mh-hero" aria-labelledby="mh-title">
+    <div class="container mh-hero-inner">
+      <div class="mh-hero-copy">
+        <span class="mh-eyebrow">MyHome para Moodle</span>
+        <h1 id="mh-title">Your Moodle can look <em>like a professional platform.</em></h1>
+        <p class="mh-lead">Your learners' first impression should be more than a list of blocks and links. Turn the front page into a branded experience with organised courses, learning pathways and navigation that makes sense.</p>
+        <div class="mh-hero-actions"><a class="btn btn-primary" href="#solicitar">Give my Moodle a professional look</a><a class="btn mh-btn-ghost" href="#recursos">Explore the features</a></div>
+        <p class="mh-hero-footnote">A distinctive learning experience built on the Moodle you already use.</p>
+      </div>
+      <div class="mh-browser" role="img" aria-label="Concept illustration of a learning platform home page com banner institucional, cursos e indicadores de progresso. This is not a screenshot of the product.">
+        <div class="mh-browser-top" aria-hidden="true"><span class="mh-dot"></span><span class="mh-dot"></span><span class="mh-dot"></span><span class="mh-url">campus.suaempresa.com.br</span></div>
+        <div class="mh-ui" aria-hidden="true">
+          <div class="mh-ui-nav"><span class="mh-ui-logo"><span class="mh-ui-logo-mark">✦</span> Your Campus</span><span class="mh-ui-nav-links"><strong>Home</strong><span>My courses</span><span>Learning paths</span></span><span class="mh-avatar">AM</span></div>
+          <div class="mh-ui-content">
+            <div class="mh-ui-banner"><div class="mh-ui-banner-copy"><small>YOUR LEARNING SPACE</small><strong>Great to see you, Ana!</strong><span>Pick up where you left off and keep making progress.</span></div><div class="mh-ui-banner-graphic"></div></div>
+            <div class="mh-ui-section-label">Keep learning <small>View my courses &nbsp;↗</small></div>
+            <div class="mh-ui-courses">
+              <div class="mh-ui-course"><div class="mh-ui-course-art"></div><div class="mh-ui-course-copy"><strong>Project Management</strong><small>75% complete</small><div class="mh-bar" style="--progress:75%"></div></div></div>
+              <div class="mh-ui-course"><div class="mh-ui-course-art two"></div><div class="mh-ui-course-copy"><strong>Customer Service and Experience</strong><small>40% complete</small><div class="mh-bar" style="--progress:40%"></div></div></div>
+              <div class="mh-ui-course"><div class="mh-ui-course-art three"></div><div class="mh-ui-course-copy"><strong>Practical Leadership</strong><small>20% complete</small><div class="mh-bar" style="--progress:20%"></div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="mh-preview-caption"><strong>Illustrative visual concept</strong> · customisation tailored to your project</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mh-proof-strip" aria-label="Solution highlights"><div class="container mh-proof-inner">
+    <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Your organisation's visual identity</span>
+    <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Featured courses and learning paths</span>
+    <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg> Configured within Moodle</span>
+  </div></div>
+
+  <section class="section" id="recursos" aria-labelledby="mh-recursos-title">
+    <div class="container">
+      <div class="mh-section-heading"><span class="mh-section-kicker">Experience, not just appearance</span><h2 id="mh-recursos-title">A front page people want to use</h2><p>Your learning platform should inspire trust and help learners find their next step. MyHome organises that experience without rebuilding Moodle from scratch.</p></div>
+      <div class="mh-features">
+        <article class="mh-feature"><span class="mh-feature-icon" aria-hidden="true">✦</span><h3>A front page with your brand</h3><p>Customise the main feature area with copy, colours, imagery and calls to action that reflect your organisation.</p></article>
+        <article class="mh-feature"><span class="mh-feature-icon" aria-hidden="true">▦</span><h3>Visually engaging course cards</h3><p>Show courses in organised cards with cover images and direct access, rather than relying on a generic list.</p></article>
+        <article class="mh-feature"><span class="mh-feature-icon" aria-hidden="true">◔</span><h3>Continue learning</h3><p>Highlight courses in progress and show completion when Moodle completion tracking is enabled.</p></article>
+        <article class="mh-feature"><span class="mh-feature-icon" aria-hidden="true">◇</span><h3>Learning pathways</h3><p>Organise learning paths by cohort, with tailored branding and visibility that follows enrolments and permissions.</p></article>
+        <article class="mh-feature"><span class="mh-feature-icon" aria-hidden="true">≡</span><h3>A catalogue that's easy to explore</h3><p>Help learners explore courses and categories using visual filters, making the right content easier to find.</p></article>
+        <article class="mh-feature"><span class="mh-feature-icon" aria-hidden="true">⚙</span><h3>Managed inside Moodle</h3><p>Configure visual regions, banners and content through Moodle administration tools while respecting permissions and core features.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section mh-narrative" aria-labelledby="mh-fazemos-title">
+    <div class="container mh-story-grid">
+      <div class="mh-story-copy"><span class="mh-section-kicker">From a generic Moodle to your own campus</span><h2 id="mh-fazemos-title">Learners should recognise your organisation, not just the technology behind it.</h2><p>A working Moodle covers the technical basics. A well-designed Moodle also communicates organisation, care and professionalism from the first visit.</p><p>With MyHome, we help turn your platform's front page into a clear, welcoming space that fits your education operation.</p><ul class="mh-story-list"><li>A visual identity aligned with your brand</li><li>Easier course discovery and progress</li><li>Customisation without changing Moodle core</li></ul><a class="btn btn-primary" href="#solicitar">Discuss my project</a></div>
+      <div class="mh-process-card"><p class="mh-process-label">How we transform your platform</p><div class="mh-step"><span class="mh-step-number">01</span><div><h3>We learn about your brand and audience</h3><p>We review your brand, courses, learners and what the front page needs to achieve.</p></div></div><div class="mh-step"><span class="mh-step-number">02</span><div><h3>We design the learner experience</h3><p>We plan featured content, navigation, banners and the structure of courses and learning paths.</p></div></div><div class="mh-step"><span class="mh-step-number">03</span><div><h3>We configure and validate it in Moodle</h3><p>We integrate and check permissions, enrolments, content and presentation across devices.</p></div></div><div class="mh-step"><span class="mh-step-number">04</span><div><h3>We guide your team</h3><p>We show your administrators how to keep the information up to date after launch.</p></div></div></div>
+    </div>
+  </section>
+
+  <section class="mh-quote" aria-labelledby="mh-ponto-title"><div class="container"><h2 id="mh-ponto-title">Moodle remains Moodle. <span style="color:#80e8b0">The experience becomes your own.</span></h2><p>Changing the front page won't solve everything: content, navigation, performance and operations still matter. But it improves the first place every learner sees.</p></div></section>
+
+  <section class="section" aria-labelledby="mh-faq-title"><div class="container"><div class="mh-section-heading"><span class="mh-section-kicker">Frequently asked questions</span><h2 id="mh-faq-title">What changes, and what stays the same?</h2></div><div class="mh-faq">
+    <details><summary>Do I need to change my Moodle theme to use MyHome?</summary><p>MyHome is a local plugin for Moodle 4.5 or later and works independently of Moodle core. Your theme and plugins should be validated before production deployment.</p></details>
+    <details><summary>Can the front page use my organisation's colours, copy and images?</summary><p>Yes. The plugin lets you customise featured areas, banners and other front-page content to present a consistent brand.</p></details>
+    <details><summary>Will learners see their courses and progress?</summary><p>The plugin considers accessible courses and learner enrolments. Progress depends on Moodle completion tracking; if the data isn't available, the page won't invent a percentage.</p></details>
+    <details><summary>Can I organise programmes into learning paths?</summary><p>Yes. Learning paths can be linked to cohorts. Course visibility respects permissions and active enrolments, and cohort synchronisation may need configuring.</p></details>
+    <details><summary>Is this a visual change or a complete implementation?</summary><p>MyHome focuses on the front page. We can also review the platform configuration, branding, course structure and other needs to define the implementation scope.</p></details>
+  </div></div></section>
+
+  <section class="section mh-contact" id="solicitar" aria-labelledby="mh-contato-title"><div class="container mh-contact-grid">
+    <div><span class="mh-section-kicker">Ready for a more professional Moodle?</span><h2 id="mh-contato-title">Your next campus may start with a better front page.</h2><p class="mh-contact-intro">Tell us about your current Moodle and what you'd like to change. We can explore the best way to tailor MyHome to your organisation.</p><div class="mh-contact-list"><a href="https://wa.me/5541996906673?text=Ol%C3%A1%2C%20quero%20um%20Moodle%20com%20cara%20profissional%20usando%20o%20MyHome." rel="noopener" target="_blank">Talk via WhatsApp ↗</a><a href="mailto:contato@eadsuporte.com.br?subject=MyHome%20para%20Moodle">contato@eadsuporte.com.br</a><a href="tel:+5541996906673">+55 (41) 9 9690-6673</a></div></div>
+    <form class="form-card" method="post" action="https://admin.mylearn.space/sites-send-mail.php">
+      <input type="hidden" name="form_type" value="service_enquiry"><input type="hidden" name="service" value="local_myhome">
+      <label style="display:none" aria-hidden="true">Site<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <h3>Tell us about your project</h3><p>Send your details and we'll discuss customising your Moodle.</p>
+      <div class="mh-form-row"><label for="mh-name">Full name *<input id="mh-name" name="full_name" type="text" autocomplete="name" required></label><label for="mh-email">E-mail *<input id="mh-email" name="email" type="email" autocomplete="email" required></label></div>
+      <div class="mh-form-row"><label for="mh-phone">Phone / WhatsApp<input id="mh-phone" name="phone" type="tel" autocomplete="tel"></label><label for="mh-org">Organisation or company<input id="mh-org" name="organisation" type="text" autocomplete="organization"></label></div>
+      <label for="mh-url">Current Moodle URL (optional)<input id="mh-url" name="moodle_url" type="url" placeholder="https://campus.suaempresa.com.br"></label>
+      <label for="mh-notes">What would you like to improve? *<textarea id="mh-notes" name="notes" rows="4" placeholder="Tell us about your audience, brand identity and what is missing from the current front page." required></textarea></label>
+      <button class="btn btn-primary" type="submit">Request a project review ↗</button><p class="mh-form-small">Your details will only be used to respond to your enquiry.</p>
+    </form>
+  </div></section>
+</main>
+<footer class="studio-site-footer" role="contentinfo">
+ <div class="studio-site-footer__inner">
+  <div class="studio-site-footer__top"><a href="/" aria-label="My Learn Services — home"><img src="/assets/studio/logo.png" alt="My Learn Services" width="155" height="46" loading="lazy"></a><p>Technology that connects.<br>Education that transforms.</p><a class="studio-site-footer__back" href="#inicio" data-studio-back-top>Back to top <span aria-hidden="true">↑</span></a></div>
+  <nav class="studio-site-footer__nav" aria-label="Footer navigation">
+   <a href="/">Home</a><a href="/services">Services</a><a href="/services#success-cases">Cases</a><a href="/plugins">Plugins</a><a href="/moodle-upgrades">Upgrades</a><a href="/service/moodlemobile">Mobile</a><a href="/service/moodle-hosting">Pricing and hosting</a><a href="/#contato">Contact</a>
+  </nav>
+  <div class="studio-site-footer__bottom"><span>© 2026 My Learn Services. All rights reserved.</span><span>Moodle™ is a registered trademark of Moodle Pty Ltd.</span><button type="button" data-open-privacy>Privacy</button><span>Made to go further. <span aria-hidden="true">✦</span></span></div>
+ </div>
+</footer>
+<script defer src="/assets/js/site.js"></script>
+<script src="/assets/js/studio-navigation.js" defer></script>
+</body>
+</html>

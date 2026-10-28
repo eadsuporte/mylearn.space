@@ -85,13 +85,35 @@
             transform: translateY(-2px);
         }
     </style>
+    <link rel="stylesheet" href="/assets/studio/fonts.css">
+    <link rel="stylesheet" href="/assets/css/studio-shell.css">
+<link rel="stylesheet" href="/assets/css/studio-navigation.css">
+<link rel="stylesheet" href="/assets/css/studio-navigation.css">
 </head>
-<body>
-<main class="error-page">
+<body class="studio-site-internal">
+<a class="studio-skip-link" href="#conteudo">Skip to content</a>
+<a class="studio-skip-link" href="#conteudo">Ir para o conteúdo</a>
+<header class="studio-site-header" data-studio-header>
+  <div class="studio-site-header__inner">
+    <a class="studio-site-header__brand" href="/" aria-label="My Learn Services — home"><img src="/assets/studio/logo.png" alt="My Learn Services" width="175" height="52"></a>
+    <button class="studio-nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="studio-site-navigation" data-studio-menu-toggle><span></span><span></span></button>
+    <nav class="studio-site-nav" id="studio-site-navigation" aria-label="Main navigation" data-studio-nav>
+<a href="/" data-site-menu="Home">Home</a>
+<a href="/plugins" data-site-menu="Plugins">Plugins</a>
+<a href="/moodle-upgrades" data-site-menu="Upgrades">Upgrades</a>
+<a href="/service/moodlemobile" data-site-menu="Mobile">Mobile</a>
+<a href="/services" data-site-menu="Services">Services</a>
+<a href="/services#success-cases" data-site-menu="Cases">Cases</a>
+<a href="/service/moodle-hosting" data-site-menu="Pricing">Pricing</a>
+<a href="/#contato" data-site-menu="Contact">Contact</a>
+      <div class="studio-site-lang" aria-label="Language"><a href="/" lang="en" hreflang="en" aria-label="English" title="English" aria-current="true">🇺🇸</a><a href="https://eadsuporte.com.br/" lang="pt-BR" hreflang="pt-BR" aria-label="Português" title="Português">🇧🇷</a></div>
+    </nav>
+  </div>
+</header>
+
+<main class="error-page" id="conteudo">
     <section class="error-card" aria-labelledby="error-title">
-        <a href="/" aria-label="My Learn Services home">
-            <img class="error-logo" src="/assets/images/logo-mylearn.png" alt="My Learn Services">
-        </a>
+        <a href="/" aria-label="My Learn Services home"><img class="error-logo" src="/assets/studio/logo.png" alt="My Learn Services"></a>
         <p class="error-code" aria-hidden="true">404</p>
         <h1 id="error-title">This page could not be found</h1>
         <p>The address may have changed or the page may no longer exist. Return to the homepage or continue exploring our plugins and professional Software Moodle™ services.</p>
@@ -102,5 +124,16 @@
         </nav>
     </section>
 </main>
+<footer class="studio-site-footer" role="contentinfo">
+ <div class="studio-site-footer__inner">
+  <div class="studio-site-footer__top"><a href="/" aria-label="My Learn Services — home"><img src="/assets/studio/logo.png" alt="My Learn Services" width="155" height="46" loading="lazy"></a><p>Technology that connects.<br>Education that transforms.</p><a class="studio-site-footer__back" href="#inicio" data-studio-back-top>Back to top <span aria-hidden="true">↑</span></a></div>
+  <nav class="studio-site-footer__nav" aria-label="Footer navigation">
+   <a href="/">Home</a><a href="/services">Services</a><a href="/services#success-cases">Cases</a><a href="/plugins">Plugins</a><a href="/moodle-upgrades">Upgrades</a><a href="/service/moodlemobile">Mobile</a><a href="/service/moodle-hosting">Pricing and hosting</a><a href="/#contato">Contact</a>
+  </nav>
+  <div class="studio-site-footer__bottom"><span>© 2026 My Learn Services. All rights reserved.</span><span>Moodle™ is a registered trademark of Moodle Pty Ltd.</span><button type="button" data-open-privacy>Privacy</button><span>Made to go further. <span aria-hidden="true">✦</span></span></div>
+ </div>
+</footer>
+<script src="/assets/js/studio-navigation.js" defer></script>
+<script defer src="/assets/js/studio-navigation.js"></script>
 </body>
 </html>
