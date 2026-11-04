@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const cost = pricing.querySelector("[data-calc-cost]");
         const setup = pricing.querySelector("[data-calc-setup]");
         const cta = pricing.querySelector("[data-calc-cta]");
-        const money = new Intl.NumberFormat("en-AU", { style: "currency", currency: "AUD", maximumFractionDigits: 0 });
+        const money = new Intl.NumberFormat("en-AU", {style: "currency", currency: "AUD", maximumFractionDigits: 0});
         const number = new Intl.NumberFormat("en-AU");
 
         function updatePricing() {
@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
             setup.textContent = money.format(plan.setup) + " one-time";
             cta.textContent = "Get Started with " + plan.label.replace("Up to ", "") + " Users";
         }
+
         if (slider && plans.length) {
             slider.addEventListener("input", updatePricing);
             updatePricing();
@@ -60,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
             selectedInput.value = card.dataset.upgradePackage;
             selectedText.textContent = "Selected package: " + card.dataset.upgradeLabel;
             warning.classList.add("is-hidden");
-            document.querySelector("#upgrade-form").scrollIntoView({ behavior: "smooth", block: "start" });
+            document.querySelector("#upgrade-form").scrollIntoView({behavior: "smooth", block: "start"});
         });
     });
     if (upgradeForm) {
@@ -68,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (!selectedInput.value) {
                 event.preventDefault();
                 warning.classList.remove("is-hidden");
-                document.querySelector("#packages").scrollIntoView({ behavior: "smooth", block: "start" });
+                document.querySelector("#packages").scrollIntoView({behavior: "smooth", block: "start"});
             }
         });
     }
